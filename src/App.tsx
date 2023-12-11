@@ -27,7 +27,7 @@ function App() {
           <ul>
             {content.map((image, index) => {
               let style = index === imageIndex ? 'selected' : ''
-              return <li className={style}>
+              return <li className={style} onClick={() => setImageIndex(index)}>
                         <a href="#">
                           <img src={`./images/${image.image}`} alt="" />
                         </a>
